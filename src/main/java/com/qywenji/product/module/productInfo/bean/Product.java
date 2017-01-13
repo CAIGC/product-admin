@@ -32,9 +32,9 @@ public class Product {
     /*店铺id*/
     private Integer shopId;
     /*商品创建时间*/
-    private Date createTime;
+    private String createTime;
     /*商品最后更新时间*/
-    private Date lastUpdateTime = new Date();
+    private String lastUpdateTime;
     /*商品供应商id*/
     private Integer mid;
     /*商品送货提示（预留字段）*/
@@ -45,6 +45,8 @@ public class Product {
     private String brandName;
 
     private String largeImageUrl;
+
+    private String firstImage;
 
     private String longDescription;
 
@@ -113,19 +115,19 @@ public class Product {
         this.description = description;
     }
 
-    public Date getCreateTime() {
+    public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
-    public Date getLastUpdateTime() {
+    public String getLastUpdateTime() {
         return lastUpdateTime;
     }
 
-    public void setLastUpdateTime(Date lastUpdateTime) {
+    public void setLastUpdateTime(String lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
     }
 
@@ -183,5 +185,13 @@ public class Product {
 
     public void setProductTypeId(Integer productTypeId) {
         this.productTypeId = productTypeId;
+    }
+
+    public String getFirstImage() {
+        return firstImage;
+    }
+
+    public void setFirstImage(String firstImage) {
+        this.firstImage = firstImage;
     }
 }
